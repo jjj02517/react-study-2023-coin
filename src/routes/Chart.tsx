@@ -27,6 +27,15 @@ function Chart() {
 			// refetchInterval: 1000,
 		},
 	);
+
+	// 이런식으로 해도됨
+	// const exceptData = data ?? [];
+	// const chartData = exceptData?.map(i => {
+	// 	return {
+	// 		x: i.time_close,
+	// 		y: [i.open, i.high, i.low, i.close],
+	// 	};
+	// });
 	return (
 		<div>
 			{isLoading ? (
@@ -36,6 +45,7 @@ function Chart() {
 					type="candlestick"
 					series={[
 						{
+							// data: chartData,
 							data: data?.map(price => ({
 								x: new Date(price.time_close),
 								y: [price.open, price.high, price.low, price.close],

@@ -6,7 +6,7 @@ import Price from './routes/Price';
 
 function Router() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/react-study-2023-coin">
 			<Routes>
 				<Route path="/" element={<Coins />}></Route>
 				<Route path="/:coinId" element={<Coin />}>

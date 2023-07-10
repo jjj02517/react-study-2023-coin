@@ -55,7 +55,7 @@ function Price() {
 				) : (
 					<ul>
 						{data?.slice(0, 100).map(price => (
-							<PriceList>
+							<PriceList key={price.time_open}>
 								<div>
 									<span>Open Price</span>
 									<span>Close Price</span>
