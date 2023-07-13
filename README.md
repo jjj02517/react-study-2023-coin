@@ -1,7 +1,7 @@
 
-# TODO APP
+# COIN List
 
-React와 Recoil를 활용하여 만든 TODO APP
+React를 활용하여 만든 COIN 조회 페이지 
 
 데모 사이트는 📌[여기](https://jjj02517.github.io/react-study-2023-coin/)에서 확인 해주시면 됩니다!
 
